@@ -8,6 +8,7 @@
 .tools h1 {
   font-family: "Playfair Display", serif;
   margin-left: 200px;
+  font-size: 36pt;
 }
 .tools-cards{
   display: grid;
@@ -86,4 +87,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.title-tools{
+  display: flex;
+  align-items: center;
+  
+  
+}
+.title-tools hr{
+  height: 2px;
+  width: 60%;
+  margin-left: 150px;
 }

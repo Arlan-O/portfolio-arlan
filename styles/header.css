@@ -141,3 +141,110 @@ header .CTA .btn-2{
 .btn-2:hover{
     transform: translateY(-10px);
 }
+
+.hamburger{
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+
+    nav{
+        padding: 20px;
+        position: relative;
+    }
+
+    nav .logo{
+        padding-left: 0;
+    }
+
+    .hamburger{
+        display: block;
+        z-index: 1000;
+    }
+
+    nav .menu ul{
+        gap: 15px;
+        padding-right: 0;
+        font-size: 14px;
+    }
+
+    header .tag{
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    header .nome-hero h1{
+        font-size: 60px;
+        line-height: 0.95;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+    }
+
+    header .descricao{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        gap: 15px;
+    }
+
+    header .title-desc h2{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+        padding: 12px;
+    }
+
+    header .subtitle-desc p{
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    header .CTA{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 30px;
+        gap: 15px;
+    }
+
+    header .CTA .btn-1,
+    header .CTA .btn-2{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+
+        background: rgba(0,0,0,.95);
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height .4s ease;
+    }
+
+    .menu.active{
+        max-height: 400px;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        padding: 30px 0;
+    }
+}

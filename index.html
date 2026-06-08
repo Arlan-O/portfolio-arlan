@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/sobre.css" />
     <link rel="stylesheet" href="styles/projects.css" />
     <link rel="stylesheet" href="styles/tools.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <script type="module" src="data/main.js" defer></script>
 
     <title>Arlan Henrique - Portfólio</title>
@@ -24,7 +25,10 @@
         <div class="logo">
           <h1>AH.</h1>
         </div>
-        <div class="menu">
+
+        <button class="hamburger" id="hamburger">☰</button>
+
+        <div class="menu" id="menu">
           <ul>
             <li><a href="#">Início</a></li>
             <li><a href="#">Sobre</a></li>
@@ -37,9 +41,11 @@
       <div class="tag">
         <h5>Portfólio</h5>
       </div>
+
       <div class="nome-hero">
         <h1>Arlan <br /><span>Henrique</span></h1>
       </div>
+
       <div class="descricao">
         <div class="title-desc">
           <h2>Tecnologia & Processos Tributários</h2>
@@ -116,132 +122,146 @@
         <div class="projects-grid"></div>
       </section>
       <section class="tools">
-        <h1>Ferramentas <span>&</span> Explorações</h1>
-        <div class="tools-cards"> 
+        <div class="title-tools">
+          <h1>Ferramentas <span>&</span> Explorações</h1>
+          <!-- <hr /> -->
+        </div>
+        <div class="tools-cards">
           <div class="tools-card">
+            <div class="card-title">
+              <h2>Desenvolvimento Web</h2>
+              <p>
+                Construção de interfaces, consumo de APIs e estruturação
+                front-end.
+              </p>
+            </div>
 
-              <div class="card-title">
-                <h2>Desenvolvimento Web</h2>
-                <p>Construção de interfaces, consumo de APIs e estruturação front-end.</p>
+            <div class="icons">
+              <div class="icons-name">
+                <img src="assets/icons/icon_html.svg" alt="icone html" />
+                <span>HTML</span>
               </div>
 
-              <div class="icons">
+              <div class="icons-name">
+                <img src="assets/icons/css.svg" alt="icone css" />
+                <span>CSS</span>
+              </div>
 
-                <div class="icons-name">
-                  <img src="assets/icons/icon_html.svg" alt="icone html"/>
-                  <span>HTML</span>
-                </div>
+              <div class="icons-name">
+                <img src="assets/icons/javascript.svg" alt="icone javascript" />
+                <span>JAVASCRIPT</span>
+              </div>
 
-                <div class="icons-name">
-                  <img src="assets/icons/css.svg" alt="icone css" srcset="" />
-                  <span>CSS</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/javascript.svg" alt="icone javascript" />
-                  <span>JAVASCRIPT</span>
-                </div>
-
-                <div class="icons-name react">
-                  <img id="react" src="assets/icons/react.svg" alt="icone react" srcset="" />
+              <!-- <div class="icons-name react">
+                  <img id="react" src="assets/icons/react.svg" alt="icone react" />
                   <span>REACT</span>
-                </div>
-              </div>
+                </div> -->
+            </div>
+          </div>
+
+          <div class="tools-card">
+            <div class="card-title">
+              <h2>Automação & Dados</h2>
+              <p>Automação operacional e estruturação de regras de negócio.</p>
             </div>
 
-            <div class="tools-card">
-
-              <div class="card-title">
-                  <h2>Automação & Dados</h2>
-                  <p>Automação operacional e estruturação de regras de negócio.</p>
+            <div class="icons">
+              <div class="icons-name">
+                <img src="assets/icons/n8n.svg" alt="icone n8n" />
+                <span>N8N</span>
               </div>
 
-              <div class="icons">
-                <div class="icons-name">
-                  <img src="assets/icons/n8n.svg" alt="icone n8n"/>
-                  <span>N8N</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/api.svg" alt="icone api" srcset="" />
-                  <span>API</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/excel.svg" alt="icone excel" />
-                  <span>EXCEL</span>
-                </div>
-
+              <div class="icons-name">
+                <img src="assets/icons/api.svg" alt="icone api" />
+                <span>API</span>
               </div>
 
+              <div class="icons-name">
+                <img src="assets/icons/excel.svg" alt="icone excel" />
+                <span>EXCEL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-card">
+            <div class="card-title">
+              <h2>Contexto Fiscal & Sistemas</h2>
+              <p>
+                Estudo de lógica aplicada ao ambiente tributário e automações.
+              </p>
             </div>
 
-            <div class="tools-card">
-
-              <div class="card-title">
-                  <h2>Contexto Fiscal & Sistemas</h2>
-                  <p>Estudo de lógica aplicada ao ambiente tributário e automações.</p>
+            <div class="icons">
+              <div class="icons-name">
+                <img src="assets/icons/doc.svg" alt="icone n8n" />
+                <span>CLASSIFICAÇÃO</span>
+                <span>FISCAL</span>
               </div>
 
-              <div class="icons">
-                <div class="icons-name">
-                  <img src="assets/icons/doc.svg" alt="icone n8n"/>
-                  <span >CLASSIFICAÇÃO</span>
-                  <span>FISCAL</span>
-                  
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/ESTRUTURA.svg" alt="icone api" srcset="" />
-                  <span >ESTRUTURA </span>
-                  <span>TRIBUTÁRIA</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/flow.svg" alt="icone excel" />
-                  <span>FLUXOS</span>
-                  <span>OPERACIONAIS</span>
-                </div>
-
+              <div class="icons-name">
+                <img src="assets/icons/ESTRUTURA.svg" alt="icone api" />
+                <span>ESTRUTURA </span>
+                <span>TRIBUTÁRIA</span>
               </div>
 
+              <div class="icons-name">
+                <img src="assets/icons/flow.svg" alt="icone excel" />
+                <span>FLUXOS</span>
+                <span>OPERACIONAIS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tools-card">
+            <div class="card-title">
+              <h2>Design & Interface</h2>
+              <p>Organização visual focada em clareza e experiência.</p>
             </div>
 
-            <div class="tools-card">
-
-              <div class="card-title">
-                  <h2>Automação & Dados</h2>
-                  <p>Automação operacional e estruturação de regras de negócio.</p>
+            <div class="icons">
+              <div class="icons-name">
+                <img src="assets/icons/figma.svg" alt="icone n8n" />
+                <span>FIGMA</span>
               </div>
 
-              <div class="icons">
-                <div class="icons-name">
-                  <img src="assets/icons/figma.svg" alt="icone n8n"/>
-                  <span>FIGMA</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/ui.svg" alt="icone api" srcset="" />
-                  <span>UI</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/frame.svg" alt="icone excel" />
-                  <span>ESTRUTURA</span>
-                  <span>VISUAL</span>
-                </div>
-
-                <div class="icons-name">
-                  <img src="assets/icons/prototype.svg" alt="icone api" srcset="" />
-                  <span>PROTOTIPAGEM</span>
-                </div>
-
+              <div class="icons-name">
+                <img src="assets/icons/ui.svg" alt="icone ui" />
+                <span>UI</span>
               </div>
 
+              <div class="icons-name">
+                <img src="assets/icons/prototype.svg" alt="icone prototipo" />
+                <span>PROTOTIPAGEM</span>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="foot">
+        <h1>Direção</h1>
+
+        <p>
+          Interesse em tecnologia aplicada a sistemas, automações e processos
+          operacionais.
+        </p>
+        <p>
+          Construindo soluções de forma prática, evoluindo através de projetos
+          reais e observação de problemas do cotidiano operacional.
+        </p>
+
+        <div class="icons-foot">
+          <a href="https://github.com/Arlan-O"
+            ><img src="assets/icons/github.svg" alt="icone github"
+          /></a>
+          <a href="https://www.linkedin.com/in/arlan-oliveira/"
+            ><img src="assets/icons/linkedin.svg" alt="" srcset=""
+          /></a>
         </div>
       </section>
     </main>
+    <footer>
+      <small> Arlan Henrique <span> — 2026 </span></small>
+    </footer>
   </body>
 </html>
