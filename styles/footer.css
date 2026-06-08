@@ -1,0 +1,44 @@
+.foot{
+    background-image: url(../assets/Images/REVERSE_HOME.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 75px;
+}
+
+.foot h1{
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-size: 36pt;
+    margin-bottom: 25px;
+}
+
+.foot p{
+    color: #fff;
+    font-size: 16pt;
+    margin-bottom: 25px;
+}
+
+.icons-foot{
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #111111;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer small{
+    color: #fff;
+}
+
+footer small span{
+    opacity: 50%;
+}

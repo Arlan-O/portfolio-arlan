@@ -11,3 +11,11 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media (max-width: 480px) {
+      body {
+        background-image: url(../assets/Images/mobile.png);
+        background-size: 100% auto;
+        background-position: top;
+    }
+}
