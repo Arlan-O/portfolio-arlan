@@ -1,10 +1,14 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .projects {
   background-color: #0e0e0e;
   height: auto;
   padding-bottom: 50px;
 }
 .projects h1 {
-  margin-left: 200px;
   color: #fff;
   font-family: "Playfair Display", serif;
   padding-top: 100px;
@@ -12,7 +16,6 @@
 }
 
 .projects .para p{
-  margin-left: 200px;
   color: #fff;
   margin-top: 50px;
   font-weight: 100;
