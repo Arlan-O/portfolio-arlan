@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 24px;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -94,6 +94,7 @@
   align-items: center;
   margin-top: 15px;
   padding: 5px;
+  
 }
 .btn a {
   background-color: aliceblue;
@@ -102,3 +103,5 @@
   padding: 15px;
   font-size: 16pt;
 }
+
+
